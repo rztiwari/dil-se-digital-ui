@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dil-se-digital-ui/static/css/main.ecb1d1ea.css",
+    "main.js": "/dil-se-digital-ui/static/js/main.99a53f4a.js",
+    "static/js/453.87263c4a.chunk.js": "/dil-se-digital-ui/static/js/453.87263c4a.chunk.js",
+    "index.html": "/dil-se-digital-ui/index.html",
+    "main.ecb1d1ea.css.map": "/dil-se-digital-ui/static/css/main.ecb1d1ea.css.map",
+    "main.99a53f4a.js.map": "/dil-se-digital-ui/static/js/main.99a53f4a.js.map",
+    "453.87263c4a.chunk.js.map": "/dil-se-digital-ui/static/js/453.87263c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecb1d1ea.css",
+    "static/js/main.99a53f4a.js"
+  ]
+}
