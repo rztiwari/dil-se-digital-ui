@@ -14,12 +14,13 @@ function App() {
       </header>
       <Grid container direction="row" justifyContent='center' style={{padding:'1rem 2rem'}}>
         <Grid item xs={12}>
-          <BrowserRouter>
+          <Application />
+          {/* <BrowserRouter>
             <Routes>
               <Route path="/" element={<Application />} />
               <Route path="/about" element={<h3>This is the About page</h3>} />
             </Routes>
-          </BrowserRouter>
+          </BrowserRouter> */}
         </Grid>
       </Grid>
     </div>
