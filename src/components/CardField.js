@@ -7,7 +7,12 @@ const CardField = ({ label, value}) => {
 
 
     useEffect(() => {
-        const newData = [...data, value];
+        let newData;
+        if(value){
+            newData = [...data, value];
+        } else{
+            newData = [...data];
+        }
         setData(newData);
     }, [value]);
 

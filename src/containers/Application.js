@@ -117,8 +117,20 @@ const Application = () => {
                     </LoadingButton>
                     <ResponsiveDialog 
                         showDialog={show}
-                        content={<><h3>This is a great dialog</h3><div>This is grat value add</div></>}
-                        title='This is dialog title'
+                        content={<><h1>Generative AI Webinar</h1><p>Join us on <strong>Sunday, April 10th at 9 am</strong> for a free webinar on Generative AI.</p>
+                        <p>Generative AI is a type of artificial intelligence that can create new data from scratch. This technology has the potential to revolutionize many i ndustries, including healthcare, manufacturing, and entertainment.</p>
+                        <p>In this webinar, you will learn about the basics of Generative AI, including:</p>
+                        <ul>
+                        <li>How Generative AI works</li>
+                        <li>The different types of Generative AI</li>
+                        <li>The potential applications of Generative AI</li>
+                        </ul>
+                        <p>You will also have the opportunity to ask questions to our expert panel.</p>
+                        <p>This webinar is perfect for anyone who is interested in learning more about Generative AI. Whether you are a business professional, a student, or s imply curious about this new technology, we encourage you to join us.</p>
+                        <p>To register for the webinar, please click on the following link:</p>
+                        <a href="https://www.example.com/webinar-registration">https://www.example.com/webinar-registration</a> <p>We hope to see you there!</p>
+                        <img src="generative-ai.jpg" alt="Generative AI"></img></>}
+                        title='Generative AI Webinar'
                         closeDialog={() => setShow(false)}
                     />
                 </Grid>

@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { Checkbox, ListItemText } from '@material-ui/core';
+import './MultiSelect.css';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -16,21 +17,11 @@ const MenuProps = {
   },
 };
 
-function getStyles(name, item, theme) {
-  return {
-    fontWeight:
-      item.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
-
 const MultipleSelect = ({
     options=[], 
     label='', 
     handleChange=null
 })  => {
-  const theme = useTheme();
   const [item, setItem] = React.useState([]);
 
   const handleValueChange = (event) => {
@@ -52,17 +43,18 @@ const MultipleSelect = ({
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
           multiple
-          value={item}
+          value={item}  
           onChange={handleValueChange}
+          renderValue={(selected) => selected.join(', ')}
           MenuProps={MenuProps}
         >
           {options.map(({id, value}) => (
             <MenuItem
               key={id}
               value={value}
-              style={getStyles(value, item, theme)}
             >
-              {value}
+              <Checkbox checked={item.indexOf(value) > -1} color='primary' />
+              <ListItemText primary={value} />
             </MenuItem>
           ))}
         </Select>

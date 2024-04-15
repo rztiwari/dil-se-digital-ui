@@ -18,7 +18,7 @@ function InputText({id=getUniqueId(), label, startAdornment = null, endAdorment 
             <InputLabel 
                 htmlFor={id}
                 style={{
-                    fontSize:'.875rem',
+                    fontSize:'1.2rem',
                     color: focused ? '#1976d2' : grey[500]
                   }}
             >

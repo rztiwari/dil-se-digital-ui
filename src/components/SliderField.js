@@ -5,6 +5,21 @@ import BasicTooltip from "./BasicTooltip";
 
 const SliderField = ({ label,  minValue=0, maxValue=100, handleChange=null, tooltip}) => {
 
+    const marks = [
+        {
+          value: 0,
+          label: 'Calm',
+        },
+        {
+            value: 60,
+            label: 'Balanced',
+          },
+        {
+          value: 100,
+          label: 'Adventurous',
+        },
+      ];
+
     const handleValueChange = (event, newValue) => {
         handleChange && handleChange(newValue);
     };
@@ -22,24 +37,25 @@ const SliderField = ({ label,  minValue=0, maxValue=100, handleChange=null, tool
         <div style={{display:'flex', flexDirection:'row'}}>
             <InputLabel 
                 style={{
-                    fontSize:'.7rem',
+                    fontSize:'.875rem',
                     color: focused ? '#1976d2' : grey[500]
                 }}
             >
                 {label}
             </InputLabel>
             <Slider  
-                mim={minValue}
+                min={minValue}
                 max={maxValue}
+                marks={marks}
                 defaultValue={50} 
                 aria-label={label} 
                 valueLabelDisplay="auto"
-                style={{margin:'0 1rem', maxWidth:'300px'}}
+                style={{margin:'-.5rem 1rem 1rem 1rem', maxWidth:'300px'}}
                 onChange={handleValueChange}
                 onFocus={()=> handleFocus()}
                 onBlur={() => handleBlur()}
             />
-            {tooltip && <BasicTooltip 
+            {tooltip && <BasicTooltip
                 value={tooltip}
             />}
         </div>

@@ -1,15 +1,18 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Application from './containers/Application';
-import { Grid } from '@material-ui/core';
+import { Grid, useMediaQuery, useTheme } from '@material-ui/core';
 import logo from'./dilSeDigital.png';
+import small_logo from'./dilSeDigital_small.png';
 
 
 function App() {
+  const theme = useTheme();
+  const small = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt='Dil se Digital' width={160} height={40} />
+        <img src={small? small_logo: logo} alt='Dil se Digital' height={40} />
         <h1>Generate Content</h1>
       </header>
       <Grid container direction="row" justifyContent='center' style={{padding:'1rem 2rem'}}>
