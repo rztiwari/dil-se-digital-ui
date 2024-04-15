@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/dil-se-digital-ui/static/css/main.ecb1d1ea.css",
-    "main.js": "/dil-se-digital-ui/static/js/main.4e7391f3.js",
+    "main.css": "/dil-se-digital-ui/static/css/main.2f53bdb6.css",
+    "main.js": "/dil-se-digital-ui/static/js/main.c9de8e09.js",
     "static/js/453.87263c4a.chunk.js": "/dil-se-digital-ui/static/js/453.87263c4a.chunk.js",
+    "static/media/dilSeDigital.png": "/dil-se-digital-ui/static/media/dilSeDigital.c2f6d5da3babc868e1a3.png",
     "index.html": "/dil-se-digital-ui/index.html",
-    "main.ecb1d1ea.css.map": "/dil-se-digital-ui/static/css/main.ecb1d1ea.css.map",
-    "main.4e7391f3.js.map": "/dil-se-digital-ui/static/js/main.4e7391f3.js.map",
+    "main.2f53bdb6.css.map": "/dil-se-digital-ui/static/css/main.2f53bdb6.css.map",
+    "main.c9de8e09.js.map": "/dil-se-digital-ui/static/js/main.c9de8e09.js.map",
     "453.87263c4a.chunk.js.map": "/dil-se-digital-ui/static/js/453.87263c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecb1d1ea.css",
-    "static/js/main.4e7391f3.js"
+    "static/css/main.2f53bdb6.css",
+    "static/js/main.c9de8e09.js"
   ]
 }
